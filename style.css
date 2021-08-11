@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime');
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier Prime';
+    background-color: #000000;
+}
+
+#random_number {
+    font-size: 16vw;
+    word-break: break-all;
+    text-align: center;
+    background-image: url(https://codepen-large-media.s3-ap-southeast-1.amazonaws.com/tumblr_o632cm2m4S1rurt8eo1_500.webp);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    line-height: 1;
+}
+
+@media screen and (max-width: 549px) {
+    #random_number {
+        font-size: 45vw;
+    }
+}
+
+#footer-button {
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    position: absolute;
+    height: 2.5em;
+    cursor: pointer;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: black;
+    background-color: white;
+    transition: background-color 200ms, color 200ms;
+}
+
+#footer-button:hover {
+    background-color: #ff0000;
+    color: white;
+}
