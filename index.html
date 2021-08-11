@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS Code</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="random_number"></h1>
+
+    <button id="footer-button">
+        <span>Click Me!</span>
+    </button>
+</body>
+<script>
+    function generateNumber() {
+        document.getElementById('random_number').innerHTML = 
+        Math.floor(Math.random() * 900000000) + 100000000;
+    }
+    generateNumber();
+    setInterval(generateNumber, 375); 
+</script>
+</html>
